@@ -1,0 +1,41 @@
+node_id,node_type,name,country,region,lat,lon,onboarding_date,esg_score
+SUP0001,supplier,"Rodriguez, Figueroa and Sanchez",South Korea,,35.4082,129.5729,2021-06-11,74.7
+SUP0002,supplier,Rhodes PLC,Germany,,49.7841,9.074,2021-02-25,87.8
+SUP0003,supplier,Johnson-Davis,Vietnam,,12.2923,109.7447,2021-12-15,88.7
+SUP0004,supplier,"Johnson, Gonzalez and Santos",Mexico,,21.7123,-100.6704,2023-09-03,76.5
+SUP0005,supplier,Cole LLC,Mexico,,24.9598,-103.7006,2025-02-16,58.0
+SUP0006,supplier,Blake and Sons,China,,35.077,104.299,2024-07-07,58.0
+SUP0007,supplier,Ramirez-Lewis,South Korea,,35.6378,126.9349,2024-11-15,49.8
+SUP0008,supplier,Davis Inc,Pakistan,,29.5486,68.8154,2022-08-26,69.7
+SUP0009,supplier,Munoz-Roman,United States,,39.6443,-97.4393,2024-09-09,66.0
+SUP0010,supplier,"Martinez, Nielsen and Miller",Egypt,,27.1897,28.9858,2022-04-15,43.6
+SUP0011,supplier,"Montgomery, Hensley and Ray",Indonesia,,-0.3598,112.6021,2024-07-20,56.0
+SUP0012,supplier,Stanley LLC,Japan,,36.9369,138.0106,2026-02-04,60.6
+SUP0013,supplier,Delacruz Group,Germany,,49.6482,10.4307,2022-03-16,77.3
+SUP0014,supplier,"Flowers, Martin and Kelly",United States,,39.0668,-98.4997,2024-05-12,46.7
+SUP0015,supplier,"Zuniga, Wong and Lynch",India,,20.7768,77.6994,2021-08-13,76.1
+SUP0016,supplier,"Sanchez, Ford and Nelson",Mexico,,21.984,-103.7661,2025-10-07,67.6
+SUP0017,supplier,"Hawkins, Cohen and Cameron",Nigeria,,7.2609,7.9813,2024-12-10,42.8
+SUP0018,supplier,Underwood LLC,Philippines,,14.195,121.197,2022-11-18,54.2
+SUP0019,supplier,Clark PLC,Germany,,50.2837,10.6208,2025-06-30,69.9
+SUP0020,supplier,Lewis-Porter,Pakistan,,28.6782,71.2975,2025-07-17,59.2
+SUP0021,supplier,"Ellis, Baker and Wright",India,,21.679,77.7549,2023-10-06,80.5
+SUP0022,supplier,Burgess-Patterson,Pakistan,,31.4651,67.6462,2023-11-20,79.0
+SUP0023,supplier,Robinson-Bright,Indonesia,,-1.3561,112.3835,2023-06-24,70.0
+SUP0024,supplier,Campos Inc,Mexico,,22.9536,-104.2958,2021-07-08,79.6
+SUP0025,supplier,Conner Group,Bangladesh,,22.9239,89.6607,2023-12-16,77.2
+SUP0026,supplier,James-Ferrell,Egypt,,28.3689,30.6889,2023-08-02,85.3
+SUP0027,supplier,"Valencia, Smith and Le",Vietnam,,12.5384,109.133,2024-06-04,70.4
+SUP0028,supplier,"Potter, Mack and Peterson",Germany,,52.2439,10.4252,2022-04-16,88.1
+SUP0029,supplier,Chavez Ltd,Poland,,52.0109,18.8602,2025-06-29,66.3
+SUP0030,supplier,Stanton-Gill,Indonesia,,-1.5326,113.9543,2023-06-20,60.5
+SUP0031,supplier,Harrell LLC,Brazil,,-12.6097,-52.9328,2025-04-21,87.2
+SUP0032,supplier,"Lynch, Hernandez and Farmer",Vietnam,,12.9752,106.5879,2023-08-23,57.2
+SUP0033,supplier,"Sellers, George and Burns",China,,35.019,102.8449,2021-04-16,78.7
+SUP0034,supplier,Koch-Decker,India,,21.8047,77.7063,2022-05-14,69.9
+SUP0035,supplier,Allen PLC,Brazil,,-12.6698,-51.7726,2025-11-19,54.5
+SUP0036,supplier,Dennis Inc,South Korea,,34.8217,127.4784,2026-01-20,60.1
+SUP0037,supplier,"Cannon, Anderson and Alvarez",United States,,41.0921,-97.1371,2023-09-13,65.1
+SUP0038,supplier,Rose-Obrien,South Africa,,-30.8904,21.8284,2025-12-24,61.5
+SUP0039,supplier,"Campos, Vaughn and Marquez",South Korea,,34.3895,127.1205,2022-11-14,62.6
+SUP0040,supplier,"Santos, Kim and Holmes",Turkey,,39.0352,36.0521,2021-05-05,71.1

@@ -1,0 +1,151 @@
+product_id,name,category,unit_cost,unit_price
+PRD0001,MACH-Down-1,Machinery,1881.79,2986.97
+PRD0002,PACK-Attack-2,Packaging,14.47,18.28
+PRD0003,ELEC-Ground-3,Electronics,208.95,268.58
+PRD0004,FOOD-Against-4,Food & Beverage,7.84,9.15
+PRD0005,TEXT-Per-5,Textiles,25.16,34.63
+PRD0006,FURN-Once-6,Furniture,59.34,75.68
+PRD0007,TEXT-Drug-7,Textiles,36.51,45.92
+PRD0008,PACK-Per-8,Packaging,3.03,4.15
+PRD0009,MACH-Discussion-9,Machinery,4929.69,6206.11
+PRD0010,CHEM-Account-10,Chemicals,82.3,122.85
+PRD0011,TEXT-Avoid-11,Textiles,11.03,16.3
+PRD0012,ELEC-Second-12,Electronics,159.76,229.18
+PRD0013,CHEM-Program-13,Chemicals,77.86,108.31
+PRD0014,PACK-Artist-14,Packaging,2.26,3.45
+PRD0015,TEXT-Drop-15,Textiles,14.19,17.51
+PRD0016,CHEM-Author-16,Chemicals,9.69,13.72
+PRD0017,TEXT-Western-17,Textiles,27.75,32.12
+PRD0018,FURN-Almost-18,Furniture,321.89,402.98
+PRD0019,PACK-Trade-19,Packaging,10.03,12.32
+PRD0020,FOOD-Give-20,Food & Beverage,17.58,23.28
+PRD0021,MACH-Avoid-21,Machinery,4689.98,5683.71
+PRD0022,AUTO-My-22,Automotive Parts,112.2,134.76
+PRD0023,MACH-Economy-23,Machinery,4631.0,7153.98
+PRD0024,MACH-Family-24,Machinery,1363.91,1973.57
+PRD0025,CHEM-Relationship-25,Chemicals,98.98,138.56
+PRD0026,PACK-Mention-26,Packaging,8.42,10.6
+PRD0027,TEXT-Difficult-27,Textiles,5.54,8.61
+PRD0028,AUTO-Notice-28,Automotive Parts,271.62,389.75
+PRD0029,CHEM-Cause-29,Chemicals,43.99,57.5
+PRD0030,AUTO-Several-30,Automotive Parts,221.9,344.77
+PRD0031,FOOD-Worry-31,Food & Beverage,22.29,33.46
+PRD0032,FURN-Us-32,Furniture,395.96,470.35
+PRD0033,PACK-Own-33,Packaging,3.26,5.07
+PRD0034,CHEM-Part-34,Chemicals,74.74,86.26
+PRD0035,MACH-Material-35,Machinery,597.21,865.1
+PRD0036,ELEC-Eight-36,Electronics,21.92,26.79
+PRD0037,CHEM-Still-37,Chemicals,68.1,99.52
+PRD0038,ELEC-Material-38,Electronics,267.75,334.93
+PRD0039,MACH-Surface-39,Machinery,3589.68,4511.37
+PRD0040,FURN-Investment-40,Furniture,215.48,320.19
+PRD0041,PACK-Customer-41,Packaging,10.09,15.46
+PRD0042,TEXT-Between-42,Textiles,26.99,37.94
+PRD0043,CHEM-Bill-43,Chemicals,15.77,20.74
+PRD0044,MACH-Reason-44,Machinery,1399.49,1763.07
+PRD0045,CHEM-Lawyer-45,Chemicals,116.9,155.11
+PRD0046,FOOD-Health-46,Food & Beverage,22.41,32.14
+PRD0047,FURN-Land-47,Furniture,483.04,664.75
+PRD0048,FOOD-Item-48,Food & Beverage,14.85,20.37
+PRD0049,AUTO-Manage-49,Automotive Parts,70.64,104.2
+PRD0050,PACK-Treat-50,Packaging,4.93,5.72
+PRD0051,AUTO-Shoulder-51,Automotive Parts,198.96,244.66
+PRD0052,CHEM-Arm-52,Chemicals,113.15,178.69
+PRD0053,PACK-Report-53,Packaging,13.81,18.18
+PRD0054,FURN-Ready-54,Furniture,38.81,60.84
+PRD0055,FURN-Race-55,Furniture,274.06,434.38
+PRD0056,MACH-Billion-56,Machinery,4821.74,7395.85
+PRD0057,CHEM-Ask-57,Chemicals,38.86,51.42
+PRD0058,AUTO-Interesting-58,Automotive Parts,257.57,332.94
+PRD0059,FOOD-Should-59,Food & Beverage,5.07,7.1
+PRD0060,TEXT-Group-60,Textiles,37.57,54.97
+PRD0061,ELEC-Such-61,Electronics,236.62,282.46
+PRD0062,TEXT-Training-62,Textiles,25.37,40.48
+PRD0063,AUTO-Boy-63,Automotive Parts,54.92,75.97
+PRD0064,AUTO-Energy-64,Automotive Parts,265.05,393.16
+PRD0065,FURN-Dark-65,Furniture,427.3,626.47
+PRD0066,TEXT-Customer-66,Textiles,15.66,20.08
+PRD0067,FURN-Not-67,Furniture,491.34,744.16
+PRD0068,FURN-List-68,Furniture,524.23,818.3
+PRD0069,FOOD-Challenge-69,Food & Beverage,13.27,18.26
+PRD0070,PACK-Knowledge-70,Packaging,12.18,17.57
+PRD0071,ELEC-Cover-71,Electronics,286.75,432.45
+PRD0072,TEXT-Family-72,Textiles,35.82,46.64
+PRD0073,PACK-Maintain-73,Packaging,6.26,7.46
+PRD0074,MACH-Enjoy-74,Machinery,2933.57,3421.05
+PRD0075,TEXT-Two-75,Textiles,19.69,27.45
+PRD0076,PACK-Wind-76,Packaging,5.01,7.09
+PRD0077,FURN-Bag-77,Furniture,47.39,55.29
+PRD0078,AUTO-Level-78,Automotive Parts,249.44,327.29
+PRD0079,FOOD-System-79,Food & Beverage,4.05,5.61
+PRD0080,ELEC-Training-80,Electronics,312.6,389.85
+PRD0081,PACK-Total-81,Packaging,9.72,11.55
+PRD0082,AUTO-Oil-82,Automotive Parts,29.73,41.3
+PRD0083,TEXT-Billion-83,Textiles,22.54,32.39
+PRD0084,PACK-Apply-84,Packaging,11.17,17.75
+PRD0085,CHEM-Reach-85,Chemicals,64.37,83.38
+PRD0086,AUTO-Now-86,Automotive Parts,241.63,307.32
+PRD0087,MACH-Think-87,Machinery,2250.96,2668.07
+PRD0088,AUTO-Administration-88,Automotive Parts,22.22,35.18
+PRD0089,ELEC-Better-89,Electronics,337.67,494.07
+PRD0090,MACH-With-90,Machinery,2103.87,2583.52
+PRD0091,FOOD-Some-91,Food & Beverage,4.75,6.0
+PRD0092,ELEC-Time-92,Electronics,228.71,336.56
+PRD0093,TEXT-Economic-93,Textiles,27.09,34.57
+PRD0094,MACH-Compare-94,Machinery,4778.84,7082.5
+PRD0095,PACK-Investment-95,Packaging,8.76,12.49
+PRD0096,CHEM-Mention-96,Chemicals,53.25,67.17
+PRD0097,ELEC-Medical-97,Electronics,155.27,231.51
+PRD0098,CHEM-Different-98,Chemicals,6.66,8.01
+PRD0099,TEXT-Treatment-99,Textiles,3.75,4.38
+PRD0100,TEXT-Institution-100,Textiles,34.51,50.61
+PRD0101,FOOD-Weight-101,Food & Beverage,12.38,14.78
+PRD0102,TEXT-Artist-102,Textiles,20.68,28.19
+PRD0103,AUTO-Community-103,Automotive Parts,64.36,86.58
+PRD0104,AUTO-Hundred-104,Automotive Parts,128.57,183.49
+PRD0105,FOOD-Able-105,Food & Beverage,16.24,19.01
+PRD0106,AUTO-In-106,Automotive Parts,121.76,174.32
+PRD0107,PACK-Evidence-107,Packaging,8.04,12.34
+PRD0108,FURN-With-108,Furniture,405.46,496.01
+PRD0109,CHEM-Step-109,Chemicals,13.12,18.88
+PRD0110,CHEM-Still-110,Chemicals,8.05,11.38
+PRD0111,PACK-Look-111,Packaging,14.16,19.95
+PRD0112,FURN-Feeling-112,Furniture,251.26,361.68
+PRD0113,MACH-Land-113,Machinery,2345.44,3273.13
+PRD0114,FOOD-Same-114,Food & Beverage,23.6,31.24
+PRD0115,FOOD-Side-115,Food & Beverage,24.07,37.49
+PRD0116,TEXT-Step-116,Textiles,9.44,11.15
+PRD0117,CHEM-Only-117,Chemicals,16.59,19.21
+PRD0118,CHEM-Recently-118,Chemicals,15.86,23.11
+PRD0119,TEXT-Serious-119,Textiles,4.71,6.09
+PRD0120,MACH-Message-120,Machinery,4239.89,4920.28
+PRD0121,ELEC-Clear-121,Electronics,329.5,420.72
+PRD0122,CHEM-Customer-122,Chemicals,18.59,27.21
+PRD0123,CHEM-Fine-123,Chemicals,77.33,119.46
+PRD0124,ELEC-Director-124,Electronics,299.33,452.46
+PRD0125,TEXT-Article-125,Textiles,12.72,15.64
+PRD0126,ELEC-Particularly-126,Electronics,305.23,461.84
+PRD0127,CHEM-Simply-127,Chemicals,118.91,158.83
+PRD0128,TEXT-Occur-128,Textiles,16.14,24.2
+PRD0129,ELEC-Ask-129,Electronics,149.51,234.56
+PRD0130,MACH-Small-130,Machinery,4306.22,5783.46
+PRD0131,TEXT-Former-131,Textiles,30.53,45.48
+PRD0132,CHEM-Art-132,Chemicals,16.86,26.24
+PRD0133,PACK-Apply-133,Packaging,8.07,12.28
+PRD0134,FOOD-Pattern-134,Food & Beverage,8.68,13.48
+PRD0135,CHEM-Me-135,Chemicals,49.76,57.47
+PRD0136,AUTO-Morning-136,Automotive Parts,273.03,325.2
+PRD0137,FOOD-Wide-137,Food & Beverage,8.66,13.66
+PRD0138,CHEM-Tonight-138,Chemicals,114.32,160.97
+PRD0139,FOOD-Nice-139,Food & Beverage,16.16,21.85
+PRD0140,FURN-Coach-140,Furniture,197.13,255.85
+PRD0141,CHEM-Art-141,Chemicals,82.34,122.57
+PRD0142,TEXT-Movie-142,Textiles,32.08,48.29
+PRD0143,TEXT-Be-143,Textiles,5.47,7.51
+PRD0144,FURN-Today-144,Furniture,62.81,87.76
+PRD0145,MACH-Cultural-145,Machinery,2263.5,3507.22
+PRD0146,FURN-Authority-146,Furniture,230.02,276.64
+PRD0147,FURN-Physical-147,Furniture,111.51,166.45
+PRD0148,FOOD-Author-148,Food & Beverage,15.84,18.94
+PRD0149,ELEC-Republican-149,Electronics,51.96,76.14
+PRD0150,TEXT-Training-150,Textiles,4.76,7.23
