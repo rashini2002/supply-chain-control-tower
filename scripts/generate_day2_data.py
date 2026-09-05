@@ -33,7 +33,9 @@ np.random.seed(SEED)
 faker = Faker()
 Faker.seed(SEED)
 
-OUT_DIR = "data"
+# Assumes this script lives in scripts/ and is run from inside scripts/,
+# with the repo structure: repo_root/scripts/, repo_root/data/raw/
+OUT_DIR = "../data/raw"
 import os
 os.makedirs(OUT_DIR, exist_ok=True)
 
