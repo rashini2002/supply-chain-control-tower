@@ -50,7 +50,7 @@ geospatial mapping work cleanly.
 ```bash
 git clone https://github.com/<your-username>/supply-chain-control-tower.git
 cd supply-chain-control-tower
-pip install sdv faker pandas numpy
+pip install sdv faker pandas numpy mlflow
 ```
 
 ## Generating the synthetic data
@@ -78,8 +78,3 @@ before treating this as a finished dataset.
 - [ ] Week 4 — network graph + routing optimization (NetworkX + PuLP)
 - [ ] Week 5 — GitHub Actions CI + Tableau dashboards
 - [ ] Week 6 — documentation + launch
-
-## Author
-
-Rashini — final-year BSc (Hons) Computer Science, NSBM Green University
-(affiliated with the University of Plymouth)

@@ -101,14 +101,17 @@ in later dbt staging models.
 **Trade-off / risk:** none, as long as the old file is actually removed and
 not left to be accidentally joined against.
 
-Day 4 - Marts built with plain pandas joins + inline checks, not Great Expectations
+
+## Day 4 - Marts built with plain pandas joins + inline checks, not Great Expectations
 
 Decision: Data quality validation for the 4 marts (procurement, inventory, logistics, network) is done with small inline Python check functions (null checks, FK checks, uniqueness, positive-value checks) that print a pass/fail log and write a validation_report.csv, instead of a dedicated data quality framework. Why: consistent with dropping the cloud DE stack — a lightweight, dependency-free approach fits a pure Python/ML/DA scope better. Trade-off / risk: less standardized and less reusable across projects than Great Expectations would be, and the checks are hand-written rather than declaratively configured.
 
-Day 4 - Supplier risk signals matched to POs by exact order month
+
+## Day 4 - Supplier risk signals matched to POs by exact order month
 
 Decision: Each purchase order is joined to its supplier's risk signal for the same calendar month (order_date's YYYY-MM), rather than the nearest available month. Why: simplest correct join given risk signals are already monthly; avoids silently attaching a risk score from the wrong period. Trade-off / risk: ~4% of orders fall outside the 24-month risk signal window and get a null risk score for that row — expected and acceptable, but worth remembering when building the supplier risk model in Day 6 (drop or impute these rows rather than treating the null as a data bug).
 
-Day 4 - Fixed a column-name mismatch in the network mart join
+
+## Day 4 - Fixed a column-name mismatch in the network mart join
 
 Decision: mart_network joins on origin_node_id/dest_node_id, not source_node_id/target_node_id. Why: the Day 3 script's actual network_edges.csv output uses origin/dest naming (from the shipments groupby), which didn't match the source/target naming used in docs/schema.md. Caught by testing the script end-to-end before delivery rather than assuming the schema doc was accurate. Trade-off / risk: docs/schema.md's network_edges column names are now slightly out of date (says source/target) and should be corrected to origin/dest to match the real data.
