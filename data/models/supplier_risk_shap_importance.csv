@@ -1,0 +1,8 @@
+feature,mean_abs_shap
+price_deviation_pct,0.8625852
+avg_lead_time_days,0.6963066
+spend_concentration,0.35354167
+esg_score,0.2149347
+num_orders,0.19681369
+avg_currency_volatility,0.115949646
+avg_country_risk_index,0.11094476

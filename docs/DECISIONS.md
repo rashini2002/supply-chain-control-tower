@@ -115,3 +115,23 @@ Decision: Each purchase order is joined to its supplier's risk signal for the sa
 ## Day 4 - Fixed a column-name mismatch in the network mart join
 
 Decision: mart_network joins on origin_node_id/dest_node_id, not source_node_id/target_node_id. Why: the Day 3 script's actual network_edges.csv output uses origin/dest naming (from the shipments groupby), which didn't match the source/target naming used in docs/schema.md. Caught by testing the script end-to-end before delivery rather than assuming the schema doc was accurate. Trade-off / risk: docs/schema.md's network_edges column names are now slightly out of date (says source/target) and should be corrected to origin/dest to match the real data.
+
+## Day 5 - Demand signal derived from customer-facing shipments, not a dedicated "sales" table
+
+Decision: Monthly demand per product is calculated from the quantity shipped on the dc_to_customer leg of mart_logistics, rather than a separate sales/orders table (none exists in this schema). Why: this is the closest real proxy for demand in the current data model — it's literally what left the network toward customers each month. Trade-off / risk: demand is inferred from fulfillment, not from actual customer orders/POS data, so it can't capture unmet demand (stockouts that suppressed a sale never show up here).
+
+## Day 5 - Prophet primary, weighted moving average as an automatic fallback
+
+Decision: The forecasting script tries Prophet first per product (if installed and if the product has at least 8 months of history), and falls back to a weighted moving average otherwise, rather than requiring Prophet or failing outright. Why: Prophet can be finicky to install (Stan/cmdstanpy dependency, especially on macOS); the script should still produce usable forecasts even if that install fails, rather than blocking the whole day's work. Trade-off / risk: forecast quality is inconsistent across products if some use Prophet and others use the simpler fallback — acceptable here since Prophet did install successfully and was used for all 150 products.
+
+## Day 5 - Reorder points use one global replenishment lead time, not per-warehouse
+
+Decision: The dynamic reorder point formula uses a single average supplier-to-warehouse lead time (computed once across the whole network) rather than a separate lead time per warehouse or per supplier-warehouse pair. Why: keeps the reorder point formula simple and interpretable for a first version; per-pair lead times would require tracing which supplier actually restocks which warehouse for which product, which isn't explicitly modeled in this schema. Trade-off / risk: reorder points don't reflect that some warehouses are genuinely faster or slower to restock than others — a reasonable simplification to flag if asked about it, not a hidden error.
+
+## Day 6 - Supplier risk label built from OUTCOME signals, predicted from CONTEXT features
+
+Decision: The high-risk label is a composite of outcome-based signals only (cancellation rate, late shipment rate, payment overdue rate, sanctions history). The model predicts that label using only context-based features (country risk index, currency volatility, ESG score, price deviation, spend concentration, order volume, average lead time) that don't include any of the label's own ingredients. Why: avoids a circular model that just restates its own label back — this way the model is actually trying to predict risk from things you'd know before or independent of the bad outcomes, which is the real-world use case for a risk score. Trade-off / risk: none directly, but it does mean weaker feature-label correlation than a leaky model would show — see next entry.
+
+## Day 6 - Fixed a missing risk correlation in Day 3, re-ran Days 3-6
+
+Decision: the first version of the supplier risk model scored 0.536 cross-validated AUC (barely better than random). Root cause: Day 3's shipment lateness was generated independently of supplier country risk tier, even though Day 2's PO cancellations were correlated with it. Fixed by adding a risk-tier-based delay bias to the supplier-to-warehouse leg in generate_day3_data.py, then re-ran Day 3 through Day 6. Why: a model can only find a signal that was actually built into the data. This wasn't a modeling bug — it was an inconsistency between two different days' synthetic data generation. Trade-off / risk: even after the fix, CV AUC only reached 0.634 — a real improvement, not spectacular, and that's expected and worth stating plainly: with only 40 suppliers, 5-fold cross-validation has high variance, so this number should be read as "there's a real but modest signal," not as a precise, generalizable accuracy figure.

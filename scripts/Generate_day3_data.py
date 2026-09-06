@@ -56,6 +56,21 @@ CUSTOMER_COUNTRIES = [
     ("Italy", 41.87, 12.57), ("Netherlands", 52.13, 5.29), ("UAE", 23.42, 53.85),
 ]
 
+CATEGORIES_UNUSED = None  # placeholder, not used here
+
+# Country risk tiers - must match the tiers used in generate_day2_data.py's
+# COUNTRY_RISK table, so that shipment lateness on the supplier->warehouse
+# leg is correlated with the same risk signal the Day 6 model uses. This
+# is the fix for the near-random AUC found when this leg's lateness was
+# generated independently of supplier risk.
+SUPPLIER_COUNTRY_RISK_TIER = {
+    "Germany": 0, "Japan": 0, "United States": 0,
+    "South Korea": 1, "China": 1, "Poland": 1,
+    "India": 2, "Mexico": 2, "Vietnam": 2, "Thailand": 2, "Indonesia": 2, "Philippines": 2,
+    "Brazil": 3, "Turkey": 3, "South Africa": 3, "Bangladesh": 3, "Sri Lanka": 3, "Egypt": 3,
+    "Nigeria": 4, "Pakistan": 4,
+}
+
 # ---------------------------------------------------------------------------
 # 1. Warehouses, distribution centers, customer regions -> nodes table
 # ---------------------------------------------------------------------------
@@ -123,7 +138,7 @@ def pick_mode(distance_km):
 # ---------------------------------------------------------------------------
 # 3. Shipments across three legs: supplier->warehouse, warehouse->DC, DC->customer
 # ---------------------------------------------------------------------------
-def make_shipments(origin_df, dest_df, n, product_ids, leg_name):
+def make_shipments(origin_df, dest_df, n, product_ids, leg_name, risk_lookup=None):
     rows = []
     for _ in range(n):
         o = origin_df.sample(1).iloc[0]
@@ -133,9 +148,15 @@ def make_shipments(origin_df, dest_df, n, product_ids, leg_name):
         mode = pick_mode(distance)
         days_per_1000, cost_per_km_unit, base_days = MODE_PROFILE[mode]
         planned_days = max(1, round(base_days + distance / 1000 * days_per_1000))
-        # actual transit has noise; higher for ocean/rail (more variable)
+
+        # Risk-correlated lateness: only meaningful on the supplier-origin
+        # leg, where "origin country risk" is a real business signal.
+        risk_tier = risk_lookup.get(o.country, 0) if risk_lookup else 0
         noise_scale = {"air": 0.5, "road": 0.5, "rail": 1.0, "ocean": 1.5}[mode]
-        actual_days = max(1, int(np.random.normal(planned_days, noise_scale)))
+        extra_delay_mean = risk_tier * 0.8
+        extra_noise = risk_tier * 0.3
+        actual_days = max(1, int(np.random.normal(planned_days + extra_delay_mean, noise_scale + extra_noise)))
+
         quantity = int(np.random.lognormal(mean=5.2, sigma=0.7))
         quantity = max(5, min(quantity, 15000))
         cost = round(distance * cost_per_km_unit * quantity, 2)
@@ -151,7 +172,7 @@ def make_shipments(origin_df, dest_df, n, product_ids, leg_name):
 
 product_ids = products_df.product_id.tolist()
 shipment_rows = []
-shipment_rows += make_shipments(suppliers_df, warehouses, 3000, product_ids, "supplier_to_warehouse")
+shipment_rows += make_shipments(suppliers_df, warehouses, 3000, product_ids, "supplier_to_warehouse", risk_lookup=SUPPLIER_COUNTRY_RISK_TIER)
 shipment_rows += make_shipments(warehouses, dcs, 2000, product_ids, "warehouse_to_dc")
 shipment_rows += make_shipments(dcs, customers, 4000, product_ids, "dc_to_customer")
 
