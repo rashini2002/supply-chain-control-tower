@@ -7,20 +7,18 @@ behind a BI dashboard, not just the dashboard itself.
 
 ## What this project does
 
-Simulates a global supply chain (suppliers → warehouses → distribution
-centers → customer regions) and builds:
+Simulates a global supply chain (suppliers → warehouses → distribution centers → customer regions) and builds:
 
-- A cloud data pipeline (S3 → Snowflake → dbt → Great Expectations → Airflow)
-- A demand forecasting model driving dynamic reorder points
-- A supplier risk scoring model (XGBoost + SHAP), tracked in MLflow
-- A network graph (NetworkX) with disruption simulation
-- A shipment routing optimization model (PuLP)
-- A 5-page Tableau control tower dashboard
+A demand forecasting model driving dynamic reorder points
+A supplier risk scoring model (XGBoost + SHAP), tracked in MLflow
+A network graph (NetworkX) with disruption simulation
+A shipment routing optimization model (PuLP)
+A 5-page Tableau control tower dashboard
+
 
 ## Tech stack
 
-Python, AWS S3, Snowflake, dbt, Great Expectations, Airflow, GitHub Actions,
-MLflow, XGBoost, SHAP, NetworkX, PuLP, SDV, Tableau
+Python, pandas, SDV, Prophet/XGBoost, SHAP, MLflow, NetworkX, PuLP, Tableau
 
 ## Repo structure
 
@@ -57,7 +55,6 @@ pip install sdv faker pandas numpy
 
 ## Generating the synthetic data
 
-Run in order — Day 3 depends on Day 2's output:
 
 ```bash
 cd scripts
@@ -77,9 +74,6 @@ before treating this as a finished dataset.
 - [x] Day 1 — schema design
 - [x] Day 2 — supplier, PO, invoice, risk signal data
 - [x] Day 3 — warehouse/DC/customer nodes, shipments, network edges, inventory
-- [ ] Day 4 — AWS S3 landing zone
-- [ ] Day 5 — Snowflake load
-- [ ] Week 2 — dbt + Great Expectations + Airflow
 - [ ] Week 3 — forecasting + supplier risk models (MLflow)
 - [ ] Week 4 — network graph + routing optimization (NetworkX + PuLP)
 - [ ] Week 5 — GitHub Actions CI + Tableau dashboards
