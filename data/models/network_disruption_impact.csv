@@ -1,0 +1,17 @@
+node_id,node_type,name,country,num_customers_exposed,revenue_at_risk,is_single_point_of_failure,num_customers_rerouted,avg_lead_time_increase_days,max_lead_time_increase_days
+DC0004,distribution_center,Germany Distribution Center 4,Germany,0,0.0,False,20,5.41,11.5
+WH0002,warehouse,Singapore Warehouse 2,Singapore,0,0.0,False,7,1.0,6.0
+DC0003,distribution_center,Singapore Distribution Center 3,Singapore,0,0.0,False,5,0.15,1.9
+WH0004,warehouse,United Arab Emirates Warehouse 4,United Arab Emirates,0,0.0,False,3,0.04,0.4
+DC0002,distribution_center,Singapore Distribution Center 2,Singapore,0,0.0,False,1,0.02,0.6
+DC0005,distribution_center,United Arab Emirates Distribution Center 5,United Arab Emirates,0,0.0,False,1,0.01,0.2
+DC0006,distribution_center,United Arab Emirates Distribution Center 6,United Arab Emirates,0,0.0,False,2,0.01,0.3
+DC0001,distribution_center,India Distribution Center 1,India,0,0.0,False,0,0.0,0.0
+WH0001,warehouse,Germany Warehouse 1,Germany,0,0.0,False,0,0.0,0.0
+WH0003,warehouse,Netherlands Warehouse 3,Netherlands,0,0.0,False,0,0.0,0.0
+WH0005,warehouse,United Arab Emirates Warehouse 5,United Arab Emirates,0,0.0,False,0,0.0,0.0
+WH0006,warehouse,United States Warehouse 6,United States,0,0.0,False,0,0.0,0.0
+WH0007,warehouse,Germany Warehouse 7,Germany,0,0.0,False,0,0.0,0.0
+WH0008,warehouse,South Korea Warehouse 8,South Korea,0,0.0,False,0,0.0,0.0
+WH0009,warehouse,Germany Warehouse 9,Germany,0,0.0,False,0,0.0,0.0
+WH0010,warehouse,Poland Warehouse 10,Poland,0,0.0,False,0,0.0,0.0

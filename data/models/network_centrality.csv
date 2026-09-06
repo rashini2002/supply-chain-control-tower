@@ -1,0 +1,87 @@
+node_id,node_type,name,betweenness_centrality,in_degree,out_degree
+DC0004,distribution_center,Germany Distribution Center 4,0.11652661064425769,10,30
+WH0004,warehouse,United Arab Emirates Warehouse 4,0.03571428571428571,40,6
+WH0002,warehouse,Singapore Warehouse 2,0.03305322128851541,40,6
+DC0003,distribution_center,Singapore Distribution Center 3,0.02829131652661064,10,30
+WH0007,warehouse,Germany Warehouse 7,0.025532212885154056,40,6
+WH0005,warehouse,United Arab Emirates Warehouse 5,0.02317927170868347,40,6
+WH0010,warehouse,Poland Warehouse 10,0.022591036414565828,40,6
+DC0005,distribution_center,United Arab Emirates Distribution Center 5,0.02233893557422969,10,30
+DC0006,distribution_center,United Arab Emirates Distribution Center 6,0.01925770308123249,10,30
+WH0008,warehouse,South Korea Warehouse 8,0.016736694677871148,40,6
+DC0001,distribution_center,India Distribution Center 1,0.016736694677871148,10,30
+WH0003,warehouse,Netherlands Warehouse 3,0.015483193277310925,40,6
+WH0009,warehouse,Germany Warehouse 9,0.012682072829131651,40,6
+WH0006,warehouse,United States Warehouse 6,0.009523809523809523,40,6
+WH0001,warehouse,Germany Warehouse 1,0.007184873949579832,40,6
+DC0002,distribution_center,Singapore Distribution Center 2,0.006932773109243697,10,30
+SUP0015,supplier,"Zuniga, Wong and Lynch",0.0,0,10
+SUP0020,supplier,Lewis-Porter,0.0,0,10
+SUP0019,supplier,Clark PLC,0.0,0,10
+SUP0018,supplier,Underwood LLC,0.0,0,10
+SUP0017,supplier,"Hawkins, Cohen and Cameron",0.0,0,10
+SUP0016,supplier,"Sanchez, Ford and Nelson",0.0,0,10
+SUP0014,supplier,"Flowers, Martin and Kelly",0.0,0,10
+SUP0006,supplier,Blake and Sons,0.0,0,10
+SUP0013,supplier,Delacruz Group,0.0,0,10
+SUP0012,supplier,Stanley LLC,0.0,0,10
+SUP0011,supplier,"Montgomery, Hensley and Ray",0.0,0,10
+SUP0010,supplier,"Martinez, Nielsen and Miller",0.0,0,10
+SUP0009,supplier,Munoz-Roman,0.0,0,10
+SUP0008,supplier,Davis Inc,0.0,0,10
+SUP0021,supplier,"Ellis, Baker and Wright",0.0,0,10
+CUST0011,customer_region,France Region 11,0.0,6,0
+SUP0022,supplier,Burgess-Patterson,0.0,0,10
+SUP0032,supplier,"Lynch, Hernandez and Farmer",0.0,0,10
+SUP0039,supplier,"Campos, Vaughn and Marquez",0.0,0,10
+SUP0038,supplier,Rose-Obrien,0.0,0,10
+SUP0037,supplier,"Cannon, Anderson and Alvarez",0.0,0,10
+SUP0036,supplier,Dennis Inc,0.0,0,10
+SUP0035,supplier,Allen PLC,0.0,0,10
+SUP0034,supplier,Koch-Decker,0.0,0,10
+SUP0033,supplier,"Sellers, George and Burns",0.0,0,10
+SUP0031,supplier,Harrell LLC,0.0,0,10
+SUP0023,supplier,Robinson-Bright,0.0,0,10
+SUP0030,supplier,Stanton-Gill,0.0,0,10
+SUP0029,supplier,Chavez Ltd,0.0,0,10
+SUP0028,supplier,"Potter, Mack and Peterson",0.0,0,10
+SUP0027,supplier,"Valencia, Smith and Le",0.0,0,10
+SUP0026,supplier,James-Ferrell,0.0,0,10
+SUP0025,supplier,Conner Group,0.0,0,10
+SUP0024,supplier,Campos Inc,0.0,0,10
+SUP0007,supplier,Ramirez-Lewis,0.0,0,10
+SUP0003,supplier,Johnson-Davis,0.0,0,10
+SUP0005,supplier,Cole LLC,0.0,0,10
+CUST0020,customer_region,Germany Region 20,0.0,6,0
+CUST0026,customer_region,France Region 26,0.0,6,0
+CUST0025,customer_region,Germany Region 25,0.0,6,0
+CUST0024,customer_region,Japan Region 24,0.0,6,0
+CUST0023,customer_region,Australia Region 23,0.0,6,0
+CUST0022,customer_region,Canada Region 22,0.0,6,0
+CUST0021,customer_region,Spain Region 21,0.0,6,0
+CUST0019,customer_region,Italy Region 19,0.0,6,0
+SUP0004,supplier,"Johnson, Gonzalez and Santos",0.0,0,10
+CUST0018,customer_region,Italy Region 18,0.0,6,0
+CUST0017,customer_region,United States Region 17,0.0,6,0
+CUST0016,customer_region,Netherlands Region 16,0.0,6,0
+CUST0015,customer_region,Italy Region 15,0.0,6,0
+CUST0014,customer_region,Japan Region 14,0.0,6,0
+CUST0013,customer_region,India Region 13,0.0,6,0
+CUST0027,customer_region,Italy Region 27,0.0,6,0
+CUST0028,customer_region,Australia Region 28,0.0,6,0
+CUST0029,customer_region,United Kingdom Region 29,0.0,6,0
+CUST0030,customer_region,United Kingdom Region 30,0.0,6,0
+CUST0010,customer_region,Canada Region 10,0.0,6,0
+CUST0009,customer_region,South Africa Region 9,0.0,6,0
+CUST0008,customer_region,Spain Region 8,0.0,6,0
+CUST0007,customer_region,South Korea Region 7,0.0,6,0
+SUP0001,supplier,"Rodriguez, Figueroa and Sanchez",0.0,0,10
+CUST0006,customer_region,Spain Region 6,0.0,6,0
+CUST0005,customer_region,France Region 5,0.0,6,0
+CUST0004,customer_region,South Africa Region 4,0.0,6,0
+CUST0001,customer_region,South Africa Region 1,0.0,6,0
+CUST0003,customer_region,United States Region 3,0.0,6,0
+CUST0002,customer_region,India Region 2,0.0,6,0
+SUP0002,supplier,Rhodes PLC,0.0,0,10
+CUST0012,customer_region,Brazil Region 12,0.0,6,0
+SUP0040,supplier,"Santos, Kim and Holmes",0.0,0,10

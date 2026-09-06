@@ -1,0 +1,31 @@
+customer_node_id,name,country,num_dcs_serving,baseline_lead_time_days
+CUST0001,South Africa Region 1,South Africa,6,20.5
+CUST0028,Australia Region 28,Australia,6,8.4
+CUST0027,Italy Region 27,Italy,6,3.1
+CUST0026,France Region 26,France,6,3.0
+CUST0025,Germany Region 25,Germany,6,3.0
+CUST0024,Japan Region 24,Japan,6,9.7
+CUST0023,Australia Region 23,Australia,6,8.4
+CUST0022,Canada Region 22,Canada,6,19.6
+CUST0021,Spain Region 21,Spain,6,4.8
+CUST0020,Germany Region 20,Germany,6,3.0
+CUST0019,Italy Region 19,Italy,6,3.0
+CUST0018,Italy Region 18,Italy,6,3.0
+CUST0017,United States Region 17,United States,6,21.1
+CUST0016,Netherlands Region 16,Netherlands,6,3.0
+CUST0015,Italy Region 15,Italy,6,3.0
+CUST0014,Japan Region 14,Japan,6,8.9
+CUST0013,India Region 13,India,6,7.2
+CUST0012,Brazil Region 12,Brazil,6,24.7
+CUST0011,France Region 11,France,6,3.0
+CUST0010,Canada Region 10,Canada,6,18.6
+CUST0009,South Africa Region 9,South Africa,6,21.0
+CUST0008,Spain Region 8,Spain,6,4.9
+CUST0007,South Korea Region 7,South Korea,6,10.0
+CUST0006,Spain Region 6,Spain,6,5.7
+CUST0005,France Region 5,France,6,3.0
+CUST0004,South Africa Region 4,South Africa,6,20.8
+CUST0003,United States Region 3,United States,6,22.1
+CUST0002,India Region 2,India,6,6.8
+CUST0029,United Kingdom Region 29,United Kingdom,6,3.0
+CUST0030,United Kingdom Region 30,United Kingdom,6,3.1
